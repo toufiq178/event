@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>explore event</h1>
+
+    <button id="btn-click"> mouse click button</button>
+    <input id="input-name" type="text" placeholder="your name">
+    <input id="input-email" type="text" placeholder="your email">
+
+    <script>
+        // document.getElementById('btn-click')
+        // .addEventListener('mouseenter', function(){
+
+        //     console.log('clicked');
+            
+        // })
+        // document.getElementById('btn-click')
+        // .addEventListener('mousemove', function(){
+
+        //     console.log('clicked');
+            
+        // })
+        // document.getElementById('btn-click')
+        // .addEventListener('mouseout', function(){
+
+        //     console.log('clicked');
+            
+        // })
+
+        // document.getElementById('input-name')
+        //     .addEventListener('focus',function(){
+
+        //         console.log('user about to write name');
+                
+        // })
+        // document.getElementById('input-email')
+        //     .addEventListener('focus',function(){
+
+        //         console.log('user about to write email');
+                
+        // })
+        // document.getElementById('input-name')
+        //     .addEventListener('blur',function(){
+
+        //         console.log('user done with name');
+                
+        // })
+        // document.getElementById('input-email')
+        //     .addEventListener('blur',function(){
+
+        //         console.log('user  done with email');
+                
+        // })
+
+        document.getElementById('input-email')
+            .addEventListener('keyup',function(e){
+
+                console.log('typing',e.target.value);
+                        
+            })
+
+
+    </script>
+</body>
+</html>
