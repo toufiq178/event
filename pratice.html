@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    
+
+    <h1>Practice for this module</h1>
+    <span> name: </span>
+    <input id="input-name" type="text" placeholder="your name">
+    <button id="btn-name-update"> update name</button>
+    <br>
+    <p id="show-name">
+        name
+    </p>
+
+    <script>
+
+        document.getElementById('btn-name-update')
+            addEventListener('click', function(){
+                
+                // access the input
+                const inputName = document.getElementById('input-name');
+                
+                const newName = inputName.value;
+
+                // create element
+                
+
+                // access parent and add element
+                const showName = document.getElementById('show-name');
+                showName.innerText = newName
+                
+                // console.log(showName , 'uu');
+                
+                inputName.value = ''
+                
+            })
+    </script>
+
+</body>
+</html>
