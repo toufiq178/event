@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptual session</title>
+
+
+    <style>
+
+        main{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .card{
+
+            box-shadow: 1px 1px 10px black;
+            border: 2px solid black;
+            padding: 10px;
+            margin: 10px;
+            color: rgb(241, 253, 255);
+            background-color: rgb(5, 102, 102);
+            border-radius: 10px;
+            width: 250px;
+        }
+        .card button {
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 2px 1px 5px white;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Add to card concept</h1>
+    <main>
+
+        <!-- card -->
+        <div class="card">
+            <img src="" alt="img.jpg" class="card-img">
+            <h1 class="card-title"> smart watch</h1>
+            <P class="card-category">electronics</P>
+            <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quibusdam? </p>
+            <h3 class="card-price">2500 <span>BDT</span></h3>
+            <button class="add-to-card">Add to Cart</button>
+        </div>
+        <!-- card -->
+        <div class="card">
+            <img src="" alt="img.jpg" class="card-img">
+            <h1 class="card-title"> headphone</h1>
+            <P class="card-category">electronics</P>
+            <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quibusdam? </p>
+            <h3 class="card-price">5000 <span>BDT</span></h3>
+            <button class="add-to-card">Add to Cart</button>
+        </div>
+        <!-- card -->
+        <div class="card">
+            <img src="" alt="img.jpg" class="card-img">
+            <h1 class="card-title">shirt</h1>
+            <P class="card-category">cloths</P>
+            <p class="card-detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, quibusdam? </p>
+            <h3 class="card-price">1000 <span>BDT</span></h3>
+            <button class="add-to-card">Add to Cart</button>
+        </div>
+       
+        
+    </main>
+    
+
+    <div id="cart-items">
+        
+    </div>
+    <div id="cart-div"> 
+
+        <p id="total-quantity">none</p>
+        <p id="total-price">none</p>
+    </div>
+
+
+
+
+    <script src="./conceptual.js"></script>    
+</body>
+</html>
