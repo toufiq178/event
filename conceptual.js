@@ -11,11 +11,16 @@ for(const button of buttons){
         
         // console.log(event.target);
         
+        // access the parent
         const card = event.target.closest('.card');
+
+        // access the children's
         const productName = card.querySelector('.card-title').innerText;
         const productCategory = card.querySelector('.card-category').innerText;
         const productPrice = parseInt(card.querySelector('.card-price').innerText);
         // console.log(productName ,productCategory ,productPrice);
+        
+
         
         const product = {
             name : productName ,
