@@ -77,10 +77,11 @@ function updateCart() {
             ${item.name} (x ${item.quantity}) - $ ${item.price * item.quantity}
 
         `
-        const a = 2 
 
-        const b = `${a}`
-        console.log(b);
+
+        // const a = 2 
+        // const b = `${a}`
+        // console.log(b);
         
 
         cartItems.appendChild(div)
