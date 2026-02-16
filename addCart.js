@@ -62,7 +62,42 @@ function addToCart (product){
     }
 
 
-    // 
-    updateCart();
+    
+    updateCard();
 
+}
+
+
+
+const updateCart = document.getElementById('update-cart');
+const totalPrice = document.getElementById('totalPrice');
+const totalQuantity = document.getElementById('totalCount');
+
+
+
+function updateCard (){
+
+    updateCart.innerHTML = ''
+    let total = 0 ;
+    let quantity = 0 ;
+
+    for (const item of cart){
+    
+        total = total + item.price * item.quantity ;
+        quantity = quantity +item.quantity;
+    
+        console.log(total , quantity);
+        
+
+        const div = document.createElement('div');
+        div.innerHTML = `
+
+            ${item.name} x ${item.quantity} = ${ item.price * item.quantity} BDT.
+        `
+
+        updateCart.appendChild(div);
+    }
+
+    totalPrice.innerText = total ;
+    totalQuantity.innerText = quantity
 }
