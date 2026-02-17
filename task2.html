@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2</title>
+</head>
+<body>
+    
+
+    <main>
+
+        <section  id="card-container">
+
+            <h1 class="highlight"> NAME CARD</h1>
+            <p data-keep="yes" class="highlight">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore consequatur quibusdam culpa ex. Aliquid libero nihil recusandae ipsam officiis sequi!</p>
+            <hr>
+
+            <img src="" alt="card.jpg">
+            <h3 class="highlight"> card title</h3>
+            <p data-keep="yes" class="highlight"> card des Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus, sit!</p>
+            <p class="highlight">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo incidunt perspiciatis, ipsum dignissimos officia sequi atque nesciunt deserunt eveniet a aspernatur ullam eius quis rem blanditiis minima neque. Porro, dolore.</p>
+
+        
+        </section>
+
+        <button id="remove">Remove class</button>
+    </main>
+
+
+
+
+
+    <script>
+
+        const highlight = document.querySelectorAll('.highlight')
+        // console.log(highlight);
+        
+        
+        for(const high of highlight){
+            
+            const border = high.style.border = '2px solid black';
+            
+        }
+    
+
+        // const elements = document.getElementById('card-container').childNodes ;
+        // console.log(elements);
+        
+
+        const rev = document.getElementById('remove');
+        rev.addEventListener('click', function (){
+
+            const highlights = document.querySelectorAll('.highlight')
+            for(const el of highlights){
+            
+                
+                if (el.dataset.keep !== 'yes') {
+                    
+                    el.classList.remove('highlight');
+                }
+                
+                // console.log(el.classList.value);
+            }
+            
+
+        })
+
+
+    </script>
+</body>
+</html>
