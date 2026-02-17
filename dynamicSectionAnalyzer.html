@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice task dom </title>
+</head>
+<body>
+    
+
+    <main>
+
+
+        <section class="container" data-active="true">
+            <h1 class="child">section title</h1>
+            <p class="child"> section description Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam illum, quis dignissimos unde fugiat tenetur fuga quaerat culpa sint iure placeat aliquam labore iusto fugit? Animi minima voluptas repellat.</p>
+            <img class="child" src="" alt="j.jpg">
+            <p class="child" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, porro! Laborum exercitationem nobis doloribus nam, blanditiis suscipit dolorem quam. Quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturi cumque cum corporis quas voluptatem, esse sapiente architecto laborum libero molestiae laudantium in corrupti! Dolores fugiat velit exercitationem tempora quod?</p>
+        </section>
+        <section data-active="true">
+            <h1>section title</h1>
+            <p> section description Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam illum, quis dignissimos unde fugiat tenetur fuga quaerat culpa sint iure placeat aliquam labore iusto fugit? Animi minima voluptas repellat.</p>
+            <img src="" alt="j.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, porro! Laborum exercitationem nobis doloribus nam, blanditiis suscipit dolorem quam. Quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturi cumque cum corporis quas voluptatem, esse sapiente architecto laborum libero molestiae laudantium in corrupti! Dolores fugiat velit exercitationem tempora quod?</p>
+        </section>
+        
+        <section>
+            <h1>section title</h1>
+            <p> section description Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam illum, quis dignissimos unde fugiat tenetur fuga quaerat culpa sint iure placeat aliquam labore iusto fugit? Animi minima voluptas repellat.</p>
+            <img src="" alt="j.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, porro! Laborum exercitationem nobis doloribus nam, blanditiis suscipit dolorem quam. Quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturi cumque cum corporis quas voluptatem, esse sapiente architecto laborum libero molestiae laudantium in corrupti! Dolores fugiat velit exercitationem tempora quod?</p>
+        </section>
+        
+        <section >
+            <h1>section title</h1>
+            <p> section description Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quibusdam illum, quis dignissimos unde fugiat tenetur fuga quaerat culpa sint iure placeat aliquam labore iusto fugit? Animi minima voluptas repellat.</p>
+            <img src="" alt="j.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, porro! Laborum exercitationem nobis doloribus nam, blanditiis suscipit dolorem quam. Quos? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, excepturi cumque cum corporis quas voluptatem, esse sapiente architecto laborum libero molestiae laudantium in corrupti! Dolores fugiat velit exercitationem tempora quod?</p>
+        </section>
+
+    </main>
+
+
+    <script>
+
+        
+        const activeDatas = document.querySelectorAll('section[data-active="true"]');
+        for(const activeData of activeDatas){
+            
+            
+            if (activeData) {
+                
+                activeData.style.backgroundColor = 'red'
+            }
+        }
+        
+        
+        const firstSection =document.querySelector('section');
+        const child = firstSection.querySelectorAll('.child')
+        // console.log(child);
+        
+        
+        
+        const sections = document.querySelectorAll('section');
+        
+        for(const section of sections){
+
+            section.addEventListener('click', function(){
+
+                // console.log(section.classList , section.tagName);
+                
+                const classList = section.classList.value ;
+                const tagnName = section.tagName ;
+
+                console.log(classList , tagnName);
+                
+            })
+            
+        }
+
+    </script>
+</body>
+</html>
